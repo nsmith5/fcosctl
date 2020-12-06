@@ -1,0 +1,6 @@
+variant: fcos
+version: 1.2.0
+passwd:
+  users:
+  - name: example
+    badfield: ohno!

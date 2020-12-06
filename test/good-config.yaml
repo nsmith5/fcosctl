@@ -1,0 +1,7 @@
+version: 1.2.0
+variant: fcos
+passwd:
+  users:
+  - name: goose
+    # honk
+    password_hash: $y$j9T$z67vOGcQpElE7O4y1J419.$yzKDffk6LaO6un6LEGHO6y7BpHG7YFKtpAUEfUB/cb3
