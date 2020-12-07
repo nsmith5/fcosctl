@@ -23,7 +23,7 @@ func compile(config string) (ign string, cleanup func(), err error) {
 	cleanup = func() { os.RemoveAll(dir) }
 
 	ign = filepath.Join(dir, `ign.json`)
-	cmd := exec.Command(`fcct`, `--strict`, `--output`, ign, config)
+	cmd := exec.Command(`fcct`, `-d`, `.`, `--strict`, `--output`, ign, config)
 	_, err = cmd.Output()
 	return
 }
